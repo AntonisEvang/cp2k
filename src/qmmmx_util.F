@@ -140,7 +140,7 @@ CONTAINS
 
       output_unit = cp_logger_get_default_io_unit()
 
-      IF (debug_this_module .AND. output_unit > 0) WRITE (output_unit, *) "BOB starting update_force_mixing_labels"
+      IF (debug_this_module .AND. output_unit > 0) WRITE (output_unit, *) "BOB starting update_force_mixing_labels,Hello Antonis"
       ! get cur indices, labels
       force_mixing_section => section_vals_get_subs_vals3(qmmm_section, "FORCE_MIXING")
       CALL get_force_mixing_indices(force_mixing_section, cur_indices, cur_labels)
